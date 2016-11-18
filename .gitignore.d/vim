@@ -1,0 +1,9 @@
+*
+!/bin
+!/bin/setup-vim.sh
+!/.gitignore.d
+!/.gitignore.d/vim
+!/.vim
+!/.vim/colors
+!/.vim/colors/liquidcarbon.vim
+!/.vimrc
