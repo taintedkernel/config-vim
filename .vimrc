@@ -132,7 +132,7 @@ Bundle 'python.vim'
 Bundle 'nvie/vim-flake8'
 
 " === Pig support === "
-Bundle "motus/pig.vim"
+"Bundle "motus/pig.vim"
 
 " === Finish vundle config === "
 " Installing plugins the first time
