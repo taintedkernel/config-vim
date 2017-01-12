@@ -194,6 +194,12 @@ set scrolloff=3
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
+" No arrow keys
+"noremap <Up> <NOP>
+"noremap <Down> <NOP>
+"noremap <Left> <NOP>
+"noremap <Right> <NOP>
+
 " Fix keybindings under tmux (used below)
 " We also need ":set-window-option -g xterm-keys on" in tmux
 map <ESC>[1;3A <A-Up>
@@ -309,6 +315,9 @@ let g:tagbar_sort = 0
 map <F3> :NERDTreeToggle<CR>
 " Ignore files
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+" Act like netrw with split explorer model
+" http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+let NERDTreeHijackNetrw = 1
 
 " === Tabman === "
 " Shortcuts
@@ -318,7 +327,6 @@ let g:tabman_focus  = 'tf'
 " === FixedTaskList.vim === "
 " Show pending tasks list
 map <F2> :TaskList<CR>
-
 
 " === CtrlP === "
 let g:ctrlp_map = ',e'
