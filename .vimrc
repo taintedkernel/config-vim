@@ -288,6 +288,9 @@ let g:tagbar_type_python = {
         \ 'v:variables:0:0',
     \ ],
 \ }
+" let g:airline_section_x='%{airline#util#prepend(airline#extensions#tagbar#currenttag(),0)}%{airline#util#wrap(airline#parts#filetype(),0)}'
+let g:airline_section_x='%{airline#extensions#tagbar#currenttag()}'
+let g:airline_section_y='%{airline#util#wrap(airline#parts#ffenc(),0)}'
 " To use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
 "if !exists('g:airline_symbols')
