@@ -120,6 +120,7 @@ Bundle 'CSApprox'
 " === C support === "
 Bundle 'c.vim'
 "Bundle 'vim-scripts/c-support'                                                                                                          
+"
 " === Python support === "
 " A set of menus/shortcuts to work with Python files
 Bundle 'python.vim'
@@ -133,6 +134,9 @@ Bundle 'nvie/vim-flake8'
 
 " === Pig support === "
 "Bundle "motus/pig.vim"
+
+" === Fish support === "
+Bundle 'dag/vim-fish'
 
 " === Finish vundle config === "
 " Installing plugins the first time
