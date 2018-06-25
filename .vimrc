@@ -13,6 +13,8 @@
 " No vi-compatible
 set nocompatible
 
+set shell=bash
+
 " ---===[ Vundle installation ]===--- "
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
