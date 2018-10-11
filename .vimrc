@@ -63,7 +63,9 @@ Bundle 'ardagnir/conque-term'
 
 " === Extra features / functionality === "
 " Jedi VIM
-Bundle 'davidhalter/jedi-vim'
+" 2018-09-10 : Commenting out, problems editing scp files remotely and 
+"   erroring "Cannot write, 'buftype' option is set"
+"Bundle 'davidhalter/jedi-vim'
 " Code and files fuzzy finder
 Bundle 'ctrlpvim/ctrlp.vim'
 " Toolkit for webdev (HTML/CSS workflow)
@@ -139,6 +141,9 @@ Bundle 'nvie/vim-flake8'
 
 " === Fish support === "
 Bundle 'dag/vim-fish'
+
+" === Argumentative === "
+Bundle 'PeterRincker/vim-argumentative.git'
 
 " === Finish vundle config === "
 " Installing plugins the first time
@@ -254,6 +259,9 @@ vmap <C-c> "+y
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
+
+" Set paste/nopaste
+nnoremap sp :set paste!<CR>
 
 " ---===[ Plugin configuration ]===--- "
 
