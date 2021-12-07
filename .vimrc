@@ -421,6 +421,10 @@ let g:neocomplcache_enable_smart_case = 1
 ""inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 
 
+" === SnipMate Deprecation === "
+let g:snipMate = { 'snippet_version' : 1 }
+
+
 " === GitGutter === "
 " Fix some problems with gitgutter and other plugins (originally jedi-vim,
 " but left just in case, and it's faster)
