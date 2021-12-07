@@ -546,4 +546,9 @@ nmap <silent> <leader>sw :set wrap!<CR>
 let hlstate=0
 nnoremap <F6> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 
-
+" Return to last edit position when opening files (You want this!)
+" https://stackoverflow.com/questions/7894330/preserve-last-editing-position-in-vim
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
