@@ -145,6 +145,11 @@ Bundle 'dag/vim-fish'
 " === Argumentative === "
 Bundle 'PeterRincker/vim-argumentative.git'
 
+" === Better Yaml supporr === "
+Bundle 'Yggdroot/indentLine'
+"Bundle 'pedrohdz/vim-yaml-folds'
+Bundle 'psycofdj/yaml-path'
+
 " === Finish vundle config === "
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -176,7 +181,7 @@ set backspace=indent,eol,start
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 
 " Always show status bar
 set ls=2
@@ -553,3 +558,6 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
+" Show YAML path with F12
+nnoremap <F12> :Yamlpath<CR>
