@@ -211,6 +211,9 @@ set scrolloff=3
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
+" Enable mouse
+set mouse=a
+
 " No arrow keys
 "noremap <Up> <NOP>
 "noremap <Down> <NOP>
