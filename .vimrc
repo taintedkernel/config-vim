@@ -36,10 +36,6 @@ call vundle#begin()
 Bundle 'VundleVim/Vundle.vim'
 
 " ---===[ Plugins ]===--- "
-" === Debugers === "
-" Python and PHP Debugger (this requires vim-debug Python package)
-" (old/outdated)
-"Bundle 'fisadev/vim-debug.vim'
 
 " === Plugins adding UI elements === "
 " Airline
@@ -55,17 +51,8 @@ Bundle 'kien/tabman.vim'
 Bundle 'fisadev/FixedTaskList.vim'
 " Consoles as buffers :ConqueTerm <cmd>
 Bundle 'ardagnir/conque-term'
-" Code commenter (unused)
-"Bundle 'scrooloose/nerdcommenter'
-" Indent text object (unused)
-"Bundle 'michaeljsmith/vim-indent-object'
-"Bundle 'taglist.vim' (replaced by tagbar)
 
 " === Extra features / functionality === "
-" Jedi VIM
-" 2018-09-10 : Commenting out, problems editing scp files remotely and 
-"   erroring "Cannot write, 'buftype' option is set"
-"Bundle 'davidhalter/jedi-vim'
 " Code and files fuzzy finder
 Bundle 'ctrlpvim/ctrlp.vim'
 " Toolkit for webdev (HTML/CSS workflow)
@@ -76,28 +63,18 @@ Bundle 'tpope/vim-obsession'
 Bundle 'tpope/vim-surround'
 " Autoclose (auto-complete open/closing pairs of chars)
 Bundle 'Townk/vim-autoclose'
-" Search results counter (shows match count on searching)
-"Bundle 'IndexedSearch'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
-" Expand matching beyond single char to words/regex with %
-"Bundle 'matchit.zip'
 " Yank history navigation (:YRShow)
 Bundle 'YankRing.vim'
 " Proportional resize, dependencies (requires Vim7.3 w/+float)
 Bundle 'ingo-library'
 Bundle 'ProportionalResize'
-" Extension to ctrlp, for fuzzy command finder (unused)
-"Bundle 'fisadev/vim-ctrlp-cmdpalette'
-" Better autocompletion (currently unused)
-"Bundle 'Shougo/neocomplete.vim'
 
 " === Git integration === "
-" Git integration (unused, conflicts with vim-fugative)
-"Bundle 'motemen/git-vim'
 " Git wrapper
 Bundle 'tpope/vim-fugitive'
 " Git diff icons on the side of the file lines
@@ -106,38 +83,12 @@ Bundle 'airblade/vim-gitgutter'
 " === Colorschemes === "
 " GVim colorscheme support
 Bundle 'CSApprox'
-" Terminal Vim with 256 colors colorscheme (unused)
-"Bundle 'fisadev/fisa-vim-colorscheme'
 
 " === Old / deprecated stuff === "
-" Automatically sort python imports
-"Bundle 'fisadev/vim-isort'
-" Relative numbering of lines (0 is the current line)
-" (disabled by default because is very intrusive and can't be easily toggled
-" on/off. When the plugin is present, will always activate the relative 
-" numbering every time you go to normal mode. Author refuses to add a setting 
-" to avoid that)
-" Bundle 'myusuf3/numbers.vim'
-" Bundles from vim-scripts repos
 
 " === File-specific support === "
 " === C support === "
 Bundle 'c.vim'
-"Bundle 'vim-scripts/c-support'                                                                                                          
-"
-" === Python support === "
-" A set of menus/shortcuts to work with Python files
-"Bundle 'python.vim'
-" Python mode (indentation, doc, refactor, lints, code checking, motion and
-" operators, highlighting, run and ipdb breakpoints)
-"Bundle 'klen/python-mode'
-" Python code checker
-"Bundle 'pyflakes.vim'
-" Flake8 checker (activate with <F7>)
-Bundle 'nvie/vim-flake8'
-
-" === Pig support === "
-"Bundle "motus/pig.vim"
 
 " === Fish support === "
 Bundle 'dag/vim-fish'
@@ -147,7 +98,6 @@ Bundle 'PeterRincker/vim-argumentative.git'
 
 " === Better Yaml supporr === "
 Bundle 'Yggdroot/indentLine'
-"Bundle 'pedrohdz/vim-yaml-folds'
 Bundle 'psycofdj/yaml-path'
 
 " === Finish vundle config === "
