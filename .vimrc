@@ -77,14 +77,14 @@ Bundle 'tpope/vim-surround'
 " Autoclose (auto-complete open/closing pairs of chars)
 Bundle 'Townk/vim-autoclose'
 " Search results counter (shows match count on searching)
-Bundle 'IndexedSearch'
+"Bundle 'IndexedSearch'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 " Expand matching beyond single char to words/regex with %
-Bundle 'matchit.zip'
+"Bundle 'matchit.zip'
 " Yank history navigation (:YRShow)
 Bundle 'YankRing.vim'
 " Proportional resize, dependencies (requires Vim7.3 w/+float)
@@ -127,7 +127,7 @@ Bundle 'c.vim'
 "
 " === Python support === "
 " A set of menus/shortcuts to work with Python files
-Bundle 'python.vim'
+"Bundle 'python.vim'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
 "Bundle 'klen/python-mode'
