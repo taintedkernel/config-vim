@@ -127,11 +127,15 @@ set ai
 " Configure backspace (bs=2)
 set backspace=indent,eol,start
 
+" Do not autoindent comments
+" https://stackoverflow.com/questions/9333134/prevent-gvim-from-auto-indenting-comments
+set indentkeys-=0#
+
 " Tablength exceptions
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2 indentkeys-=0#
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2 indentkeys-=0#
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 indentkeys-=0#
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab indentkeys-=0#
 
 " Always show status bar
 set ls=2
